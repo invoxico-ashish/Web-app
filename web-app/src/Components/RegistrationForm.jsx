@@ -69,8 +69,7 @@ function RegistrationForm() {
                                         <input type="text" {...register("username", { required: true, pattern: /^[a-zA-Z0-9_]+$/i, })} className="form-control" />
                                         <span className="text-danger">
                                             {errors.username?.type === "required" && "Username is Required"}
-                                            {errors.username?.type === "pattern" && "username is wrong"
-                                            }
+                                            {errors.username?.type === "pattern" && "username is wrong"}                                    
                                         </span>
                                     </div>
                                 </div>
